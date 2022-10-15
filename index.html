@@ -32,9 +32,9 @@
 <!-- Navbar -->
 <section id="nav" class="light-section">
 <div class="container-fluid">
-<nav class="navbar fixed-top navbar-expand navbar-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="#">Portfolio</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -56,18 +56,20 @@
 </nav>
 </div>
 </section>
+
+
 <!-- Home -->
 <section id="home" class="light-section">
 
-  <div class="container-fluid welcome">
-    <div>
+  <div class="container-fluid welcome row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
       <h1 class="main-heading">Hi, I'm Kuba</h1>
       <p>a frontend developer<br>
       let's get to know each other</p>
       <button type="button"  class="btn btn-secondary btn-home"><i class="btn-icon fa-solid fa-terminal"></i><a href="#contact">we should code together!</a></button>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <img class="img-fluid" src="https://drive.google.com/uc?export=download&id=1B1pVTF78z9Fd2_2XoCcn9TPNz5Dx9Tex" alt="profile-picture">
+      <img class="img" src="https://drive.google.com/uc?export=download&id=1B1pVTF78z9Fd2_2XoCcn9TPNz5Dx9Tex" alt="profile-picture">
     </div>
 
  </>
@@ -97,7 +99,7 @@
 <!-- Stack -->
 
 <section class="light-section reveal" id="stack">
-  <div class="container-fluid">
+
   <h1 class="section-heading">
     my technology stack
   </h1>
@@ -105,7 +107,7 @@
 
     <div class="row card-row">
 
-      <div class="col-lg-4 ">
+      <div class="col-lg-4 col-md-6 col-sm-12 stack-column">
         <div class="card h-100">
           <div class="card-header">
             <h3>frontend</h3>
@@ -121,7 +123,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 ">
+      <div class="col-lg-4 col-md-6 col-sm-12 stack-column">
         <div class="card h-100">
           <div class="card-header">
             <h3>backend</h3>
@@ -137,7 +139,7 @@
         </div>
       </div>
 
-      <div class="col-lg-4 ">
+      <div class="col-lg-4 col-md-6 col-sm-12 stack-column">
         <div class="card h-100">
           <div class="card-header">
             <h3>development</h3>
@@ -153,7 +155,6 @@
 
 
       </div>
-    </div>
 </section>
 
 <!-- Projects -->
@@ -209,17 +210,17 @@
 
 <section class="light-section reveal" id="contact">
 
-  <div class="container-fluid welcome">
-    <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="row container-fluid welcome">
+    <div class="col-lg-6 col-md-12 col-sm-12">
       <a href="https://drive.google.com/uc?export=download&id=1ctC9jSb58AsJp1jQL57XNHQqb9690jl2" download="cvJakubTecza.pdf"><i class="fa-regular fa-3x social fa-file"></i><span class="cv-text">download my resume</span></a>
     </div>
-    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+    <div class="form-group col-lg-6 col-md-12 col-sm-12">
     <h2>contact me:</h2>
     <form action="https://formspree.io/f/mrgdlwpj" method="POST">
       <input type="hidden" name="_subject" value="New email - Portfolio">
-      <input type="email" name="email" placeholder="email address" required>
+      <input class="input-contact" type="email" name="email" placeholder="email address" required>
       <input type="hidden" name="_next" value="./thankyou.html">
-      <input type="text" class="" name="message"placeholder="your message" required>
+      <input class="input-contact" type="text" class="" name="message"placeholder="your message" required>
       <button type="submit" class="btn btn-lg btn-secondary btn-home"><i class="fa-regular btn-icon fa-envelope"></i>Submit</button>
     </form>
     </div>

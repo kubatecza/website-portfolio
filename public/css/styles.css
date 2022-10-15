@@ -2,13 +2,25 @@ body {
   font-family: "Montserrat";
   text-align: center;
   margin: 0;
+  background-color: #F7F7F7;
+  justify-content: center;
+  text-align: center;
 }
 
 section {
   padding: 0 15%;
 }
 
-h1, h2, h3, h4, p {
+/* @media only screen and (max-device-width: 480px) {
+
+  section {
+    flex-direction: column-reverse;
+    height: auto;
+}
+} */
+
+
+h2, h3, h4, p {
   margin: 10px;
 }
 
@@ -20,6 +32,8 @@ a {
 a:hover {
   color: #393E46;
 }
+
+
 .main-heading {
   font-size: 3rem;
   line-height: 1.5;
@@ -28,6 +42,11 @@ a:hover {
 .section-heading {
   font-size: 2.5rem;
   line-height: 1.5;
+}
+
+.row {
+  margin-right: calc(-.0 * var(--bs-gutter-x));
+  margin-left: calc(-.0 * var(--bs-gutter-x));
 }
 
 .reveal{
@@ -96,14 +115,16 @@ width: 100%;
 overflow: hidden;
 }
 
-.img-fluid {
+.img {
   width: 75%;
-  opacity: 0.9;
+  max-width: 75%;
+  height: auto;
+  margin: 5%;
 }
 
 .btn-home {
   background-color: #393E46;
-  margin: 5% 3% 5% 0;
+  margin: 5% 0 5% 0;
 }
 
 .btn-home:hover {
@@ -113,8 +134,15 @@ overflow: hidden;
 .btn-icon {
   margin: 0 10px 0 0;
 }
+/* .row card-row {
+margin-right: 0;
+margin-left: 0;
+}; */
 /* STACK */
 
+#stack {
+  padding: 3% 25%;
+}
 .stack-column {
   padding: 3% 2%;
 }
@@ -127,9 +155,9 @@ overflow: hidden;
   margin: 0 10px;
 }
 
-.card-row {
+/* .card-row {
   padding: 50px;
-}
+} */
 
 .card {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
@@ -154,6 +182,14 @@ overflow: hidden;
 .form-control {
   margin-bottom: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .input-contact {
+    position: relative;
+    right: 14px;
+  }
+}
+
 
 /* FOOTER */
 .social {
