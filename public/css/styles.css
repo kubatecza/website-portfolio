@@ -1,0 +1,161 @@
+body {
+  font-family: "Montserrat";
+  text-align: center;
+  margin: 0;
+}
+
+section {
+  padding: 0 15%;
+}
+
+h1, h2, h3, h4, p {
+  margin: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #393E46;
+}
+.main-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+/* KONTENERY */
+.container-fluid{
+  padding: 7% 15%;
+}
+
+#nav .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* SEKCJE */
+.light-section {
+  background-color: #F7F7F7;
+}
+
+.white-section {
+  background-color: #EEEEEE;
+}
+/* NAVBAR */
+/* padding najezdza na tytul sekcji */
+.navbar {
+  padding: 2% 20% 0;
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.navbar-brand {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar-brand:hover {
+  color: #393E46;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+}
+.nav-link:hover {
+  color: #929AAB;
+  text-decoration: underline;
+}
+
+/* HOME */
+.welcome{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+overflow: hidden;
+}
+
+.img-fluid {
+  width: 75%;
+  opacity: 0.9;
+}
+
+.btn-home {
+  background-color: #393E46;
+  margin: 5% 3% 5% 0;
+}
+
+.btn-home:hover {
+  color: #EEEEEE;
+}
+
+.btn-icon {
+  margin: 0 10px 0 0;
+}
+/* STACK */
+
+.stack-column {
+  padding: 3% 2%;
+}
+
+.stack-item {
+  font-weight: 600;
+}
+
+.stack-icon {
+  margin: 0 10px;
+}
+
+.card-row {
+  padding: 50px;
+}
+
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.card-header h3 {
+  font-weight: 900 !important;
+}
+/* PROJECTS */
+.project-name {
+  margin: 18px;
+}
+
+/* CONTACT */
+.cv-text {
+  font-size: 2rem;
+  margin: 0 2%;
+  position: relative;
+  bottom: 4px;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+.social {
+  margin: 20px 10px;
+}
