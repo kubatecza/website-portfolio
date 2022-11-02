@@ -172,6 +172,9 @@ margin-left: 0;
   margin: 18px;
 }
 
+.projects-carousel {
+  padding: 5rem;
+}
 /* CONTACT */
 .cv-text {
   font-size: 2rem;
